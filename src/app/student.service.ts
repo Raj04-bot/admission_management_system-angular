@@ -18,7 +18,7 @@ export class StudentService {
 
   saveStudent (student: Student):Observable<Student>{
     return this.httpClient.post<Student>(`${this.url}/save`,student);
-    //(`${this.url}/save`, student); /
+    
   }
   // saveStudent(student: Student): Observable<Student> {
   // return this.httpClient.post<Student>(`${this.url}/save`, student); // ✅ send student data
